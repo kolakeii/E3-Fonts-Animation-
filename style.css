@@ -1,0 +1,111 @@
+/*Bounce animation and border set*/
+.bounce_container {
+    border-bottom: 2px solid #ffffff;
+    display: flex;
+    height: 200px;
+    width: 100%;
+}
+.Bounce {
+    align-self: flex-end;
+    font-family:'Roboto';
+    font-size: 20px;
+    width: 100px;
+    height: 100px;
+    background: #ffffff;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transform-origin: bottom;
+}
+.bounce:hover {
+    animation-name: bounce;
+    animation-timing-function: ease;
+}
+
+
+
+/*spin animation and border set*/
+.spin_container {
+    border-bottom: 2px solid #ffffff;
+    display: flex;
+    height: 200px;
+    width: 100%;
+}
+.Rotate {
+    align-self: flex-end;
+    font-family:'SingleDay';
+    font-size: 20px;
+    text-align: center;
+    width: 100px;
+    height: 40px;
+    background: #ffffff;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transform-origin: center;
+}
+.rotate:hover {
+    animation-name: spin;
+    animation-timing-function: ease;
+}
+
+
+
+/*pop animation and border set*/
+.pop_container {
+    border-bottom: 2px solid #ffffff;
+    display: flex;
+    height: 200px;
+    width: 100%;
+}
+.Pop {
+    align-self: flex-end;
+    font-size: 20px;
+    font-family:'Kanit';
+    text-align: center;
+    width: 100px;
+    height: 40px;
+    background: #ffffff;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transform-origin: center;
+}
+.pop:hover {
+    animation-name: pop;
+    animation-timing-function: ease;
+}
+
+
+
+/*animation rules*/
+@keyframes bounce {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-50px); }
+    100% { transform: translateY(0); }
+}
+
+@keyframes spin {
+    0%   { transform: rotate(0deg); }
+    50%  { transform: rotate(720deg); }
+    100% { transform: rotate(0deg); }
+}
+
+@keyframes pop {
+    0%   { transform: scale(1); }
+    10%   { transform: scale(0.8); }
+    100% { transform: scale(5); }
+}
+
+
+
+/* Font families*/
+@font-face {
+    font-family: 'Kanit';
+    src: url('Kanit-Black.ttf') format('truetype');
+  }
+  @font-face {
+    font-family: 'Roboto';
+    src: url('Roboto-BlackItalic.ttf') format('truetype');
+  }
+  @font-face {
+    font-family: 'SingleDay';
+    src: url('SingleDay-Regular.ttf') format('truetype');
+  }
